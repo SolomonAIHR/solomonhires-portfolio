@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rufus Solomon - Talent Acquisition Leader using AI to scale hiring</title>
-<meta name="description" content="Rufus Solomon - India TA Lead at Tangoe. 15+ years in talent acquisition. Building AI-enabled hiring infrastructure across India, US, EMEA & APAC.">
+<meta name="description" content="Rufus Solomon - Talent Acquisition Leader at Tangoe, leading a 19-member team across India, US, EMEA & APAC. Building AI-enabled hiring infrastructure. Open to Director-level TA roles.">
 <meta property="og:title" content="Rufus Solomon - TA Leader using AI to scale hiring">
-<meta property="og:description" content="15+ years in talent acquisition. Leading 19-member team. 300-500 hires/year across global markets.">
+<meta property="og:description" content="Leading a 19-member TA team. 300-500 hires/year across global markets. Open to Sr. Manager, Associate Director, or Director roles.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://solomonhires.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +24,8 @@
     --accent: #00A86B;
     --accent-dark: #008C58;
     --accent-light: #E6F7EF;
+    --warn: #B86E00;
+    --warn-light: #FFF4E5;
     --shadow: 0 1px 3px rgba(15,25,36,0.04), 0 4px 16px rgba(15,25,36,0.04);
     --shadow-hover: 0 4px 12px rgba(15,25,36,0.08), 0 12px 40px rgba(15,25,36,0.08);
     --mono: 'JetBrains Mono', monospace;
@@ -272,6 +274,13 @@
     border-radius: 50%;
     background: var(--accent);
   }
+  .project-status.in-progress {
+    background: var(--warn-light);
+    color: var(--warn);
+  }
+  .project-status.in-progress::before {
+    background: var(--warn);
+  }
   .project-tagline {
     font-size: 14px;
     color: var(--ink2);
@@ -470,7 +479,7 @@
           India, US, EMEA &amp; APAC <span class="sep">·</span> Product, Services, GCC, BFSI, Shared Services, IT &amp; Non-IT
         </div>
         <p class="hero-about">
-          I'm Rufus Solomon, leading a 19-member talent acquisition team at Tangoe — handling 300-500 hires annually across engineering, cloud, DevOps, GTM, and finance functions, reporting directly to VP HR. With 15+ years in TA, I bring AI tools into my workflow to scale recruiter productivity and improve hiring outcomes
+          I'm Rufus Solomon, leading a 19-member talent acquisition team at Tangoe — handling 300-500 hires annually across engineering, cloud, DevOps, GTM, and finance functions, reporting directly to VP HR. With 15+ years in TA, I bring AI tools into my workflow to scale recruiter productivity and improve hiring outcomes.
         </p>
         <div class="cta-row">
           <a href="#projects" class="btn btn-primary">View Projects →</a>
@@ -499,18 +508,18 @@
   <div class="container">
     <div class="section-eyebrow">Live Work</div>
     <h2 class="section-title">Projects shipped to production</h2>
-    <p class="section-sub">Tools I've built to solve real problems in talent acquisition. Both currently used by recruiters and HR leadership at Tangoe.</p>
+    <p class="section-sub">Tools I've built to solve real problems in talent acquisition — used by recruiters and HR leadership at Tangoe.</p>
     
     <div class="project">
       <div class="project-hdr">
         <div class="project-name">Tangoe Hiring Engine</div>
         <span class="project-status">Live</span>
       </div>
-      <div class="project-tagline">AI-powered candidate screening platform with live proctoring and configurable interview modes</div>
+      <div class="project-tagline">AI-powered candidate screening platform I built and shipped to production — replacing manual first-round screens with live-proctored, AI-driven interviews tailored to each role's requirements.</div>
       <ul class="project-features">
-        <li>Adaptive camera proctoring with per-device calibration and 15-frame sampling</li>
-        <li>Tab-switch detection with focus scoring (0-100) and external device typing heuristics</li>
-        <li>Configurable interview modes: technical, behavioral, process, ownership</li>
+        <li>Adaptive proctoring: camera-based monitoring with per-device brightness calibration to reduce false positives</li>
+        <li>Anti-cheat detection: real-time tab-switch and typing-pattern analysis, scored 0-100, flags candidates likely using external help</li>
+        <li>Role-specific AI interviews: configurable focus modes (technical, behavioral, process, ownership) generate tailored questions from any job description</li>
       </ul>
       <div class="project-meta">
         <div class="project-stack">Vercel · Upstash Redis · Cloudinary · Claude API</div>
@@ -521,13 +530,13 @@
     <div class="project">
       <div class="project-hdr">
         <div class="project-name">TA Operations Dashboard</div>
-        <span class="project-status">Live</span>
+        <span class="project-status in-progress">In Progress</span>
       </div>
-      <div class="project-tagline">Recruiter-first TA platform with role-based access and hold-cycle tracking, built from VP HR feedback</div>
+      <div class="project-tagline">Recruiter-first TA platform built to replace scattered spreadsheets with a single source of truth — role-based views so Recruiters, Hiring Managers, and HR Leadership each see exactly what they need.</div>
       <ul class="project-features">
-        <li>Role-based views: Recruiter, Hiring Manager, Executive, VP HR, HR Leadership</li>
-        <li>Hold-cycle tracking with reason codes, timeline history, and audit trail</li>
-        <li>HR Leadership dashboard with KPI cards, executive breakdown, and risk positions</li>
+        <li>Role-based access: Recruiters get full edit control; Hiring Managers and Executives get tailored read views — no more sanitizing data before sharing</li>
+        <li>Hold-cycle tracking: full status history and audit trail on every requisition, so nothing falls through the cracks</li>
+        <li>HR Leadership dashboard: live KPIs and trend visualization across the entire requisition pipeline</li>
       </ul>
       <div class="project-meta">
         <div class="project-stack">Vanilla JS · SheetJS · Chart.js · localStorage</div>
