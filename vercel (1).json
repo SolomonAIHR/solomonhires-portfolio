@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/boolean.js": {
+      "runtime": "nodejs20.x"
+    }
+  }
+}
