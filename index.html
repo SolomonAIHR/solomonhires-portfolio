@@ -1,609 +1,815 @@
 <!DOCTYPE html>
-<html lang="en">  
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rufus Solomon - Talent Acquisition Leader using AI to scale hiring</title>
-<meta name="description" content="Rufus Solomon - Talent Acquisition Leader at Tangoe, leading a 19-member team across India, US, EMEA & APAC. Building AI-enabled hiring infrastructure. Open to Director-level TA roles.">
-<meta property="og:title" content="Rufus Solomon - TA Leader using AI to scale hiring">
-<meta property="og:description" content="Leading a 19-member TA team. 300-500 hires/year across global markets. Open to Sr. Manager, Associate Director, or Director roles.">
+<title>Rufus Solomon — Talent Acquisition & People Leader</title>
+<meta name="description" content="Rufus Solomon — 15+ years building talent functions from scratch. 19-member team. 300-500 hires/year. Open to senior TA, People & HR Leadership roles.">
+<meta property="og:title" content="Rufus Solomon — Talent Acquisition & People Leader">
+<meta property="og:description" content="Hiring is a business function. I've been running it like one for 15 years. The process, the team, the tools, the data — across nine industries and four regions.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://solomonhires.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --ink: #0F1924;
-    --ink2: #2C3744;
-    --ink3: #5B6675;
-    --ink4: #8B95A3;
-    --bg: #FAFBFC;
-    --surface: #FFFFFF;
-    --border: #E5E8EC;
-    --accent: #00A86B;
-    --accent-dark: #008C58;
-    --accent-light: #E6F7EF;
-    --warn: #B86E00;
-    --warn-light: #FFF4E5;
-    --shadow: 0 1px 3px rgba(15,25,36,0.04), 0 4px 16px rgba(15,25,36,0.04);
-    --shadow-hover: 0 4px 12px rgba(15,25,36,0.08), 0 12px 40px rgba(15,25,36,0.08);
-    --mono: 'JetBrains Mono', monospace;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    color: var(--ink);
-    background: var(--bg);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  .container {
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 0 24px;
-  }
-  
-  /* NAV */
-  nav {
-    padding: 24px 0;
-    border-bottom: 1px solid var(--border);
-    background: var(--surface);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    backdrop-filter: blur(8px);
-    background: rgba(255,255,255,0.85);
-  }
-  .nav-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .nav-brand {
-    font-weight: 700;
-    font-size: 17px;
-    color: var(--ink);
-    text-decoration: none;
-    letter-spacing: -0.01em;
-  }
-  .nav-brand span { color: var(--accent); }
-  .nav-links {
-    display: flex;
-    gap: 28px;
-    align-items: center;
-  }
-  .nav-links a {
-    color: var(--ink3);
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-    transition: color 0.15s;
-  }
-  .nav-links a:hover { color: var(--accent); }
-  
-  /* HERO */
-  .hero {
-    padding: 72px 0 56px;
-  }
-  .hero-grid {
-    display: grid;
-    grid-template-columns: 1fr 140px;
-    gap: 48px;
-    align-items: center;
-  }
-  .hero-photo {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    overflow: hidden;
-    background: var(--accent-light);
-    border: 3px solid var(--surface);
-    box-shadow: var(--shadow);
-  }
-  .hero-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-  .hero h1 {
-    font-size: 44px;
-    font-weight: 800;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    margin-bottom: 16px;
-    color: var(--ink);
-  }
-  .hero h1 .accent { color: var(--accent); }
-  .hero-subtitle {
-    font-size: 14px;
-    color: var(--ink3);
-    line-height: 1.6;
-    margin-bottom: 28px;
-    font-weight: 500;
-  }
-  .hero-subtitle .sep {
-    color: var(--accent);
-    font-weight: 700;
-    margin: 0 6px;
-  }
-  .hero-about {
-    font-size: 16px;
-    color: var(--ink2);
-    line-height: 1.7;
-    max-width: 720px;
-  }
-  
-  /* CTA */
-  .cta-row {
-    display: flex;
-    gap: 12px;
-    margin-top: 28px;
-    flex-wrap: wrap;
-  }
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 18px;
-    border-radius: 8px;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.15s;
-    border: 1px solid transparent;
-  }
-  .btn-primary {
-    background: var(--accent);
-    color: white;
-  }
-  .btn-primary:hover {
-    background: var(--accent-dark);
-    transform: translateY(-1px);
-  }
-  .btn-secondary {
-    background: var(--surface);
-    color: var(--ink2);
-    border-color: var(--border);
-  }
-  .btn-secondary:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-  }
-  
-  /* SECTIONS */
-  section { padding: 56px 0; }
-  .section-eyebrow {
-    font-family: var(--mono);
-    font-size: 11px;
-    font-weight: 500;
-    color: var(--accent);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-bottom: 8px;
-  }
-  .section-title {
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    margin-bottom: 8px;
-    color: var(--ink);
-  }
-  .section-sub {
-    font-size: 15px;
-    color: var(--ink3);
-    margin-bottom: 36px;
-    max-width: 680px;
-  }
-  
-  /* STATS */
-  .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1px;
-    background: var(--border);
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid var(--border);
-  }
-  .stat {
-    background: var(--surface);
-    padding: 24px;
-  }
-  .stat-num {
-    font-size: 32px;
-    font-weight: 800;
-    color: var(--accent);
-    letter-spacing: -0.02em;
-    line-height: 1.1;
-    margin-bottom: 4px;
-  }
-  .stat-lbl {
-    font-size: 12px;
-    color: var(--ink3);
-    font-weight: 500;
-  }
-  
-  /* PROJECTS */
-  .project {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 32px;
-    margin-bottom: 20px;
-    transition: all 0.2s;
-  }
-  .project:hover {
-    box-shadow: var(--shadow-hover);
-    border-color: #C8D0DA;
-  }
-  .project-hdr {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 16px;
-    margin-bottom: 8px;
-    flex-wrap: wrap;
-  }
-  .project-name {
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--ink);
-    letter-spacing: -0.01em;
-  }
-  .project-status {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 4px 10px;
-    background: var(--accent-light);
-    color: var(--accent-dark);
-    border-radius: 100px;
-    font-size: 11px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-  }
-  .project-status::before {
-    content: '';
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: var(--accent);
-  }
-  .project-status.in-progress {
-    background: var(--warn-light);
-    color: var(--warn);
-  }
-  .project-status.in-progress::before {
-    background: var(--warn);
-  }
-  .project-tagline {
-    font-size: 14px;
-    color: var(--ink2);
-    margin-bottom: 20px;
-  }
-  .project-features {
-    list-style: none;
-    margin-bottom: 20px;
-  }
-  .project-features li {
-    padding: 6px 0;
-    padding-left: 22px;
-    position: relative;
-    font-size: 14px;
-    color: var(--ink2);
-    line-height: 1.5;
-  }
-  .project-features li::before {
-    content: '→';
-    position: absolute;
-    left: 0;
-    top: 6px;
-    color: var(--accent);
-    font-weight: 600;
-  }
-  .project-meta {
-    display: flex;
-    gap: 16px;
-    padding-top: 20px;
-    border-top: 1px solid var(--border);
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .project-stack {
-    font-family: var(--mono);
-    font-size: 11px;
-    color: var(--ink4);
-  }
-  .project-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    color: var(--accent);
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: 600;
-  }
-  .project-link:hover { gap: 10px; }
-  
-  /* ABOUT-DEEP */
-  .skills-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 36px;
-  }
-  .skill-block h3 {
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--ink3);
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    margin-bottom: 14px;
-  }
-  .skill-list {
-    list-style: none;
-  }
-  .skill-list li {
-    font-size: 14px;
-    color: var(--ink2);
-    padding: 6px 0;
-    border-bottom: 1px solid var(--border);
-  }
-  .skill-list li:last-child { border-bottom: none; }
-  
-  /* CONTACT */
-  .contact-card {
-    background: linear-gradient(135deg, #0F1924 0%, #2C3744 100%);
-    color: white;
-    border-radius: 16px;
-    padding: 48px;
-    text-align: center;
-  }
-  .contact-card h2 {
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    margin-bottom: 12px;
-  }
-  .contact-card p {
-    font-size: 15px;
-    color: rgba(255,255,255,0.75);
-    margin-bottom: 28px;
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .contact-btns {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .contact-card .btn-primary {
-    background: var(--accent);
-  }
-  .contact-card .btn-secondary {
-    background: rgba(255,255,255,0.1);
-    color: white;
-    border-color: rgba(255,255,255,0.2);
-  }
-  .contact-card .btn-secondary:hover {
-    background: rgba(255,255,255,0.18);
-    border-color: rgba(255,255,255,0.4);
-    color: white;
-  }
-  
-  /* FOOTER */
-  footer {
-    padding: 36px 0;
-    border-top: 1px solid var(--border);
-    margin-top: 56px;
-  }
-  .footer-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-  .footer-copy {
-    font-size: 13px;
-    color: var(--ink4);
-  }
-  .footer-links {
-    display: flex;
-    gap: 20px;
-  }
-  .footer-links a {
-    font-size: 13px;
-    color: var(--ink4);
-    text-decoration: none;
-  }
-  .footer-links a:hover { color: var(--accent); }
-  
-  /* MOBILE */
-  @media (max-width: 720px) {
-    .hero { padding: 48px 0 40px; }
-    .hero-grid {
-      grid-template-columns: 1fr;
-      gap: 24px;
-    }
-    .hero-photo {
-      width: 96px;
-      height: 96px;
-    }
-    .hero h1 {
-      font-size: 32px;
-    }
-    .hero-subtitle .sep {
-      display: inline-block;
-    }
-    section { padding: 40px 0; }
-    .section-title { font-size: 22px; }
-    .stat-num { font-size: 26px; }
-    .project { padding: 24px; }
-    .project-name { font-size: 17px; }
-    .skills-grid { grid-template-columns: 1fr; gap: 24px; }
-    .contact-card { padding: 32px 24px; }
-    .contact-card h2 { font-size: 22px; }
-    .nav-links { gap: 16px; }
-    .nav-links a { font-size: 13px; }
-  }
+:root {
+  --ink: #0A0A0A;
+  --chalk: #FAFBFC;
+  --surface: #FFFFFF;
+  --signal: #00A86B;
+  --signal-dark: #007A4D;
+  --signal-light: #F0FFF8;
+  --slate: #4A5568;
+  --slate-light: #8B95A3;
+  --border: #E5E8EC;
+  --serif: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  --sans: 'Inter', -apple-system, sans-serif;
+  --mono: 'JetBrains Mono', monospace;
+  --max: 1040px;
+  --r: 12px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.04);
+  --shadow-lg: 0 4px 12px rgba(0,0,0,0.06), 0 16px 48px rgba(0,0,0,0.06);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--sans); background: var(--chalk); color: var(--ink); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 32px; }
+
+/* NAV */
+nav { padding: 18px 0; border-bottom: 1px solid var(--border); background: rgba(250,251,252,0.94); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 100; }
+.nav-inner { display: flex; justify-content: space-between; align-items: center; }
+.nav-brand { font-weight: 700; font-size: 15px; color: var(--ink); text-decoration: none; letter-spacing: -0.01em; }
+.nav-brand span { color: var(--signal); }
+.nav-links { display: flex; gap: 28px; align-items: center; }
+.nav-links a { color: var(--slate); text-decoration: none; font-size: 13px; font-weight: 500; transition: color 0.15s; }
+.nav-links a:hover { color: var(--signal); }
+.nav-cta { background: var(--ink) !important; color: #fff !important; padding: 8px 18px; border-radius: 100px; font-weight: 600 !important; transition: background 0.15s !important; }
+.nav-cta:hover { background: #2D3748 !important; }
+
+/* HERO */
+.hero { padding: 100px 0 80px; }
+.hero-kicker { font-family: var(--mono); font-size: 11px; color: var(--signal); text-transform: uppercase; letter-spacing: 0.12em; font-weight: 500; margin-bottom: 28px; display: flex; align-items: center; gap: 10px; }
+.hero-kicker::before { content: ''; width: 32px; height: 1.5px; background: var(--signal); }
+.hero-layout { display: grid; grid-template-columns: 1fr 180px; gap: 48px; align-items: start; }
+.hero-headline {
+  font-family: var(--serif);
+  font-size: clamp(38px, 5.5vw, 62px);
+  font-weight: 300;
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  margin-bottom: 32px;
+}
+.hero-headline em { font-style: normal; font-weight: 800; color: var(--signal); }
+.hero-headline strong { font-weight: 600; font-style: normal; }
+.hero-body { font-size: 17px; color: var(--slate); line-height: 1.75; max-width: 600px; margin-bottom: 36px; }
+.hero-body strong { color: var(--ink); font-weight: 600; }
+.status-line { display: flex; align-items: center; gap: 10px; margin-bottom: 32px; }
+.status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--signal); animation: pulse 2s infinite; flex-shrink: 0; }
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.6;transform:scale(1.2)} }
+.status-text { font-size: 13px; color: var(--slate); font-weight: 500; }
+.status-text strong { color: var(--ink); }
+.cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 8px; font-size: 14px; font-weight: 600; text-decoration: none; transition: all 0.15s; border: 1.5px solid transparent; cursor: pointer; font-family: var(--sans); white-space: nowrap; }
+.btn-primary { background: var(--signal); color: #fff; }
+.btn-primary:hover { background: var(--signal-dark); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(0,168,107,0.25); }
+.btn-secondary { background: var(--surface); color: var(--ink); border-color: var(--border); }
+.btn-secondary:hover { border-color: var(--ink); }
+.hero-photo-col { display: flex; flex-direction: column; align-items: center; gap: 16px; padding-top: 8px; }
+.hero-photo { width: 160px; height: 160px; border-radius: 50%; overflow: hidden; border: 3px solid var(--surface); box-shadow: 0 0 0 1px var(--border), var(--shadow-lg); }
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hero-tag { background: var(--signal); color: #fff; font-size: 10px; font-weight: 700; padding: 4px 12px; border-radius: 100px; text-align: center; letter-spacing: 0.04em; box-shadow: 0 2px 8px rgba(0,168,107,0.3); }
+.hero-geo { font-size: 11px; color: var(--slate-light); text-align: center; font-weight: 500; }
+
+/* PROOF BAR */
+.proof-bar { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--surface); margin-bottom: 0; }
+.proof-inner { display: grid; grid-template-columns: repeat(4, 1fr); }
+.proof-cell { padding: 28px 32px; border-right: 1px solid var(--border); }
+.proof-cell:last-child { border-right: none; }
+.proof-num { font-family: var(--serif); font-size: 40px; font-weight: 600; color: var(--signal); letter-spacing: -0.03em; line-height: 1; margin-bottom: 4px; }
+.proof-lbl { font-size: 12px; color: var(--slate-light); font-weight: 500; line-height: 1.4; }
+
+/* SECTION BASE */
+section { padding: 80px 0; }
+.sec-kicker { font-family: var(--mono); font-size: 11px; color: var(--signal); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500; margin-bottom: 14px; }
+.sec-title { font-family: var(--serif); font-size: clamp(28px, 3.5vw, 42px); font-weight: 300; letter-spacing: -0.025em; color: var(--ink); margin-bottom: 16px; line-height: 1.2; }
+.sec-title em { font-style: normal; font-weight: 700; color: var(--signal); }
+.sec-sub { font-size: 16px; color: var(--slate); max-width: 600px; line-height: 1.7; margin-bottom: 52px; }
+hr.divider { border: none; border-top: 1px solid var(--border); }
+
+/* WHAT I DO — 3 PILLARS */
+.pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--border); border-radius: 16px; overflow: hidden; margin-bottom: 48px; }
+.pillar { background: var(--surface); padding: 36px 28px; transition: background 0.2s; }
+.pillar:hover { background: var(--signal-light); }
+.pillar-icon { font-size: 32px; margin-bottom: 20px; }
+.pillar-title { font-family: var(--serif); font-size: 22px; font-weight: 400; color: var(--ink); margin-bottom: 12px; }
+.pillar-desc { font-size: 14px; color: var(--slate); line-height: 1.7; margin-bottom: 20px; }
+.pillar-items { list-style: none; }
+.pillar-items li { font-size: 13px; color: var(--slate); padding: 5px 0; border-bottom: 1px solid var(--border); display: flex; gap: 8px; align-items: flex-start; line-height: 1.4; }
+.pillar-items li:last-child { border-bottom: none; }
+.pillar-items li::before { content: '→'; color: var(--signal); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+
+/* WHY DIFFERENT */
+.diff-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.diff-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r); padding: 28px; transition: all 0.2s; position: relative; overflow: hidden; }
+.diff-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--signal); transform: scaleX(0); transform-origin: left; transition: transform 0.2s; }
+.diff-card:hover::before { transform: scaleX(1); }
+.diff-card:hover { box-shadow: var(--shadow-lg); }
+.diff-num { font-family: var(--mono); font-size: 11px; color: var(--slate-light); margin-bottom: 12px; }
+.diff-title { font-size: 16px; font-weight: 700; color: var(--ink); margin-bottom: 10px; letter-spacing: -0.01em; }
+.diff-body { font-size: 14px; color: var(--slate); line-height: 1.7; }
+.diff-body strong { color: var(--ink); font-weight: 600; }
+
+/* PROOF — INDUSTRIES */
+.industries-wrap { background: var(--ink); border-radius: 20px; padding: 48px; margin-bottom: 48px; }
+.industries-title { font-family: var(--serif); font-size: 26px; font-weight: 300; color: #fff; margin-bottom: 8px; }
+.industries-sub { font-size: 14px; color: rgba(255,255,255,0.55); margin-bottom: 36px; }
+.industries-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+.industry-tag { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); color: rgba(255,255,255,0.85); padding: 8px 16px; border-radius: 100px; font-size: 13px; font-weight: 500; transition: all 0.15s; }
+.industry-tag:hover { background: rgba(0,168,107,0.2); border-color: rgba(0,168,107,0.4); color: #fff; }
+.industry-tag.highlight { background: rgba(0,168,107,0.15); border-color: rgba(0,168,107,0.3); color: #6EE7B7; }
+
+/* BUILT WORK */
+.built-grid { display: grid; gap: 20px; }
+.built-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 36px; display: grid; grid-template-columns: 1fr 120px; gap: 32px; transition: all 0.2s; }
+.built-card:hover { box-shadow: var(--shadow-lg); border-color: #C8D0DA; }
+.built-num { font-family: var(--mono); font-size: 11px; color: var(--slate-light); margin-bottom: 10px; }
+.built-title { font-family: var(--serif); font-size: 24px; font-weight: 400; color: var(--ink); margin-bottom: 6px; }
+.built-problem { font-size: 13px; color: var(--signal); font-weight: 600; margin-bottom: 14px; font-style: italic; }
+.built-desc { font-size: 14px; color: var(--slate); line-height: 1.7; margin-bottom: 18px; }
+.built-points { list-style: none; margin-bottom: 20px; }
+.built-points li { font-size: 13px; color: var(--slate); padding: 5px 0 5px 20px; position: relative; line-height: 1.5; }
+.built-points li::before { content: '→'; position: absolute; left: 0; color: var(--signal); font-weight: 700; }
+.built-footer { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; padding-top: 18px; border-top: 1px solid var(--border); }
+.built-stack { font-family: var(--mono); font-size: 11px; color: var(--slate-light); flex: 1; }
+.built-link { color: var(--signal); text-decoration: none; font-size: 13px; font-weight: 600; }
+.status-badge { display: inline-flex; align-items: center; gap: 5px; padding: 5px 12px; border-radius: 100px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
+.s-live { background: var(--signal-light); color: var(--signal-dark); }
+.s-live::before { content:''; width:6px; height:6px; border-radius:50%; background:var(--signal); }
+.s-progress { background: #FFF4E5; color: #B86E00; }
+.s-progress::before { content:''; width:6px; height:6px; border-radius:50%; background:#F0A030; }
+.s-tool { background: #EEF2FF; color: #4338CA; }
+.s-tool::before { content:''; width:6px; height:6px; border-radius:50%; background:#4F46E5; }
+
+/* BOOLEAN TOOL */
+.tool-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-top: 24px; }
+.tool-bar { background: var(--ink); padding: 16px 24px; display: flex; align-items: center; gap: 12px; }
+.tool-bar-title { font-size: 14px; font-weight: 600; color: #fff; flex: 1; }
+.tool-bar-badge { background: var(--signal); color: #fff; font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 100px; letter-spacing: 0.04em; }
+.tool-body { padding: 24px; }
+.tool-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
+.f-label { font-size: 11px; font-weight: 700; color: var(--slate); text-transform: uppercase; letter-spacing: 0.07em; display: block; margin-bottom: 6px; }
+.f-input { width: 100%; padding: 10px 14px; border: 1.5px solid var(--border); border-radius: 8px; font-size: 14px; font-family: var(--sans); color: var(--ink); background: var(--chalk); outline: none; transition: border-color 0.15s; }
+.f-input:focus { border-color: var(--signal); }
+.f-input::placeholder { color: var(--slate-light); }
+.f-textarea { width: 100%; padding: 12px 14px; border: 1.5px solid var(--border); border-radius: 8px; font-size: 14px; font-family: var(--sans); color: var(--ink); background: var(--chalk); outline: none; transition: border-color 0.15s; resize: vertical; min-height: 90px; line-height: 1.5; }
+.f-textarea:focus { border-color: var(--signal); }
+.f-textarea::placeholder { color: var(--slate-light); }
+.tool-actions { display: flex; gap: 10px; margin-top: 14px; align-items: center; }
+.gen-btn { background: var(--signal); color: #fff; border: none; padding: 11px 22px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; font-family: var(--sans); transition: all 0.15s; display: flex; align-items: center; gap: 8px; }
+.gen-btn:hover { background: var(--signal-dark); transform: translateY(-1px); }
+.gen-btn:disabled { opacity: 0.55; cursor: not-allowed; transform: none; }
+.tool-hint { font-size: 12px; color: var(--slate-light); }
+.spin-wrap { display: none; align-items: center; gap: 10px; color: var(--slate); font-size: 13px; padding: 14px 0; }
+.spin-wrap.on { display: flex; }
+.spin { width: 16px; height: 16px; border: 2px solid var(--border); border-top-color: var(--signal); border-radius: 50%; animation: spin 0.8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.tool-out { display: none; margin-top: 20px; border-top: 1px solid var(--border); padding-top: 20px; }
+.tool-out.on { display: block; }
+.out-block { margin-bottom: 18px; }
+.out-label { font-family: var(--mono); font-size: 11px; color: var(--signal); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.out-query { background: #F7F8FA; border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; font-family: var(--mono); font-size: 12px; color: var(--ink); line-height: 1.6; white-space: pre-wrap; word-break: break-all; }
+.copy-btn { background: none; border: 1px solid var(--border); color: var(--slate); font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 6px; cursor: pointer; font-family: var(--sans); transition: all 0.15s; }
+.copy-btn:hover { border-color: var(--signal); color: var(--signal); }
+
+/* CAREER */
+.career { position: relative; padding-left: 28px; }
+.career::before { content:''; position:absolute; left:0; top:8px; bottom:8px; width:2px; background:linear-gradient(180deg, var(--signal) 0%, rgba(0,168,107,0.1) 100%); }
+.career-item { position: relative; margin-bottom: 52px; }
+.career-item:last-child { margin-bottom: 0; }
+.career-item::before { content:''; position:absolute; left:-33px; top:7px; width:10px; height:10px; border-radius:50%; background:var(--signal); border:2.5px solid var(--chalk); box-shadow:0 0 0 2px var(--signal); }
+.career-period { font-family: var(--mono); font-size: 11px; color: var(--signal); letter-spacing: 0.06em; margin-bottom: 5px; font-weight: 500; }
+.career-role { font-family: var(--serif); font-size: 21px; font-weight: 400; color: var(--ink); margin-bottom: 3px; }
+.career-org { font-size: 13px; color: var(--slate-light); margin-bottom: 14px; }
+.career-stats { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; }
+.career-stat { background: var(--signal-light); border: 1px solid rgba(0,168,107,0.15); border-radius: 8px; padding: 7px 14px; }
+.cs-val { font-family: var(--serif); font-size: 19px; font-weight: 600; color: var(--signal); display: block; line-height: 1; }
+.cs-lbl { font-size: 10px; color: var(--slate-light); font-weight: 500; }
+.career-desc { font-size: 14px; color: var(--slate); line-height: 1.7; }
+.career-desc strong { color: var(--ink); font-weight: 600; }
+
+/* SERVICES */
+.svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.svc-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px; transition: all 0.2s; display: flex; flex-direction: column; }
+.svc-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: #C8D0DA; }
+.svc-icon { font-size: 32px; margin-bottom: 18px; }
+.svc-title { font-family: var(--serif); font-size: 19px; font-weight: 400; color: var(--ink); margin-bottom: 10px; }
+.svc-desc { font-size: 13px; color: var(--slate); line-height: 1.65; margin-bottom: 16px; flex: 1; }
+.svc-who { font-size: 11px; font-weight: 600; color: var(--slate-light); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 18px; }
+.svc-cta { color: var(--signal); text-decoration: none; font-size: 13px; font-weight: 700; display: inline-flex; align-items: center; gap: 4px; transition: gap 0.15s; }
+.svc-cta:hover { gap: 8px; }
+
+/* CONTACT */
+.contact-wrap { background: var(--ink); border-radius: 24px; padding: 64px; text-align: center; position: relative; overflow: hidden; }
+.contact-wrap::before { content:''; position:absolute; top:-80px; right:-80px; width:240px; height:240px; border-radius:50%; background:radial-gradient(circle, rgba(0,168,107,0.12) 0%, transparent 70%); pointer-events:none; }
+.contact-wrap::after { content:''; position:absolute; bottom:-60px; left:-60px; width:180px; height:180px; border-radius:50%; background:radial-gradient(circle, rgba(0,168,107,0.08) 0%, transparent 70%); pointer-events:none; }
+.contact-title { font-family: var(--serif); font-size: clamp(28px, 4vw, 44px); font-weight: 300; color: #fff; margin-bottom: 16px; line-height: 1.2; }
+.contact-sub { font-size: 16px; color: rgba(255,255,255,0.6); margin-bottom: 40px; max-width: 480px; margin-left: auto; margin-right: auto; line-height: 1.6; }
+.contact-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.btn-ghost { background: rgba(255,255,255,0.08); color: #fff; border-color: rgba(255,255,255,0.18); }
+.btn-ghost:hover { background: rgba(255,255,255,0.15); border-color: rgba(255,255,255,0.35); color: #fff; transform: none; }
+
+/* FOOTER */
+footer { padding: 32px 0; border-top: 1px solid var(--border); }
+.footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+.footer-copy { font-size: 12px; color: var(--slate-light); }
+.footer-links { display: flex; gap: 20px; }
+.footer-links a { font-size: 12px; color: var(--slate-light); text-decoration: none; transition: color 0.15s; }
+.footer-links a:hover { color: var(--signal); }
+
+/* MOBILE */
+@media (max-width: 720px) {
+  .hero { padding: 60px 0 52px; }
+  .hero-layout { grid-template-columns: 1fr; }
+  .hero-photo-col { flex-direction: row; justify-content: flex-start; padding-top: 0; order: -1; }
+  .hero-photo { width: 88px; height: 88px; }
+  .proof-inner { grid-template-columns: repeat(2,1fr); }
+  .proof-cell { border-right: none; border-bottom: 1px solid var(--border); }
+  .pillars { grid-template-columns: 1fr; }
+  .diff-grid { grid-template-columns: 1fr; }
+  .built-card { grid-template-columns: 1fr; }
+  .svc-grid { grid-template-columns: 1fr; }
+  .contact-wrap { padding: 40px 24px; }
+  .tool-row { grid-template-columns: 1fr; }
+  .nav-links .hide-mob { display: none; }
+  .industries-wrap { padding: 32px 24px; }
+}
 </style>
 </head>
 <body>
 
 <nav>
-  <div class="container nav-inner">
+  <div class="wrap nav-inner">
     <a href="#" class="nav-brand">Rufus <span>Solomon</span></a>
     <div class="nav-links">
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="#what-i-do" class="hide-mob">What I Do</a>
+      <a href="#why-different" class="hide-mob">Why Different</a>
+      <a href="#built" class="hide-mob">Built Work</a>
+      <a href="#services" class="hide-mob">Advisory</a>
+      <a href="Rufus_Solomon_Resume.pdf" download class="hide-mob" style="color:var(--slate);font-size:13px;font-weight:500;text-decoration:none;transition:color 0.15s" onmouseover="this.style.color='var(--signal)'" onmouseout="this.style.color='var(--slate)'">↓ Resume</a>
+      <a href="#contact" class="nav-cta">Let's talk</a>
     </div>
   </div>
 </nav>
 
+<!-- HERO -->
 <header class="hero">
-  <div class="container">
-    <div class="hero-grid">
+  <div class="wrap">
+    <div class="hero-kicker">Talent Acquisition &amp; People Leader</div>
+    <div class="hero-layout">
       <div>
-        <h1>Talent Acquisition Leader using <span class="accent">AI</span> to scale hiring</h1>
-        <div class="hero-subtitle">
-          15+ years <span class="sep">·</span> 19-member team <span class="sep">·</span> 300-500 hires/year <br>
-          India, US, EMEA &amp; APAC <span class="sep">·</span> Product, Services, GCC, BFSI, Shared Services, IT &amp; Non-IT
-        </div>
-        <p class="hero-about">
-          I'm Rufus Solomon, leading a 19-member talent acquisition team at Tangoe — handling 300-500 hires annually across engineering, cloud, DevOps, GTM, and finance functions, reporting directly to VP HR. With 15+ years in TA, I bring AI tools into my workflow to scale recruiter productivity and improve hiring outcomes.
+        <h1 class="hero-headline">
+          Hiring is a business function.<br>
+          I've been running it like one<br>
+          <em>for 15 years.</em>
+        </h1>
+        <p class="hero-body">
+          The process. The team. The tools. The data — across <strong>nine industries, four regions, and 300–500 hires a year.</strong> Full people management accountability: appraisals, KPIs, PIPs, succession. I'm <strong>Rufus Solomon</strong> — open to senior Talent Acquisition and People Leadership roles where building is part of the brief.
         </p>
+        <div class="status-line">
+          <div class="status-dot"></div>
+          <div class="status-text"><strong>Open now</strong> — Senior TA, People &amp; HR Leadership roles · Bengaluru · India/Global</div>
+        </div>
         <div class="cta-row">
-          <a href="#projects" class="btn btn-primary">View Projects →</a>
-          <a href="mailto:rufus@solomonhires.com" class="btn btn-secondary">Get in touch</a>
+          <a href="#what-i-do" class="btn btn-primary">See what I bring →</a>
+          <a href="#contact" class="btn btn-secondary">Get in touch</a>
         </div>
       </div>
-      <div class="hero-photo">
-        <img src="rufus.jpg" alt="Rufus Solomon">
+      <div class="hero-photo-col">
+        <div>
+          <div class="hero-photo"><img src="rufus.jpg" alt="Rufus Solomon"></div>
+        </div>
+        <div class="hero-tag">Available</div>
+        <div class="hero-geo">📍 Bengaluru, India</div>
       </div>
     </div>
   </div>
 </header>
 
-<section>
-  <div class="container">
-    <div class="stats-grid">
-      <div class="stat"><div class="stat-num">15+</div><div class="stat-lbl">Years in TA</div></div>
-      <div class="stat"><div class="stat-num">19</div><div class="stat-lbl">Team Members Led</div></div>
-      <div class="stat"><div class="stat-num">500</div><div class="stat-lbl">Hires Per Year</div></div>
-      <div class="stat"><div class="stat-num">4</div><div class="stat-lbl">Global Regions</div></div>
+<!-- PROOF BAR -->
+<div class="proof-bar">
+  <div class="wrap proof-inner">
+    <div class="proof-cell">
+      <div class="proof-num">15+</div>
+      <div class="proof-lbl">Years in Talent Acquisition</div>
+    </div>
+    <div class="proof-cell">
+      <div class="proof-num">19</div>
+      <div class="proof-lbl">Team members built &amp; led</div>
+    </div>
+    <div class="proof-cell">
+      <div class="proof-num">300–500</div>
+      <div class="proof-lbl">Hires delivered per year</div>
+    </div>
+    <div class="proof-cell">
+      <div class="proof-num">200+</div>
+      <div class="proof-lbl">Solo hires in 8 months across 7 industries</div>
     </div>
   </div>
-</section>
+</div>
 
-<section id="projects">
-  <div class="container">
-    <div class="section-eyebrow">Live Work</div>
-    <h2 class="section-title">Projects shipped to production</h2>
-    <p class="section-sub">Tools I've built to solve real problems in talent acquisition — used by recruiters and HR leadership at Tangoe.</p>
-    
-    <div class="project">
-      <div class="project-hdr">
-        <div class="project-name">Tangoe Hiring Engine</div>
-        <span class="project-status">Live</span>
-      </div>
-      <div class="project-tagline">AI-powered candidate screening platform I built and shipped to production — replacing manual first-round screens with live-proctored, AI-driven interviews tailored to each role's requirements.</div>
-      <ul class="project-features">
-        <li>Adaptive proctoring: camera-based monitoring with per-device brightness calibration to reduce false positives</li>
-        <li>Anti-cheat detection: real-time tab-switch and typing-pattern analysis, scored 0-100, flags candidates likely using external help</li>
-        <li>Role-specific AI interviews: configurable focus modes (technical, behavioral, process, ownership) generate tailored questions from any job description</li>
-      </ul>
-      <div class="project-meta">
-        <div class="project-stack">Vercel · Upstash Redis · Cloudinary · Claude API</div>
-        <a href="https://tangoe-screening.vercel.app" target="_blank" rel="noopener" class="project-link">View Live →</a>
-      </div>
-    </div>
-    
-    <div class="project">
-      <div class="project-hdr">
-        <div class="project-name">TA Operations Dashboard</div>
-        <span class="project-status in-progress">In Progress</span>
-      </div>
-      <div class="project-tagline">Recruiter-first TA platform built to replace scattered spreadsheets with a single source of truth — role-based views so Recruiters, Hiring Managers, and HR Leadership each see exactly what they need.</div>
-      <ul class="project-features">
-        <li>Role-based access: Recruiters get full edit control; Hiring Managers and Executives get tailored read views — no more sanitizing data before sharing</li>
-        <li>Hold-cycle tracking: full status history and audit trail on every requisition, so nothing falls through the cracks</li>
-        <li>HR Leadership dashboard: live KPIs and trend visualization across the entire requisition pipeline</li>
-      </ul>
-      <div class="project-meta">
-        <div class="project-stack">Vanilla JS · SheetJS · Chart.js · localStorage</div>
-        <span class="project-link" style="color:var(--ink4);cursor:default">Demo coming soon →</span>
-      </div>
-    </div>
-    
-  </div>
-</section>
+<hr class="divider">
 
-<section id="about">
-  <div class="container">
-    <div class="section-eyebrow">Background</div>
-    <h2 class="section-title">What I bring to the table</h2>
-    
-    <div class="skills-grid" style="margin-top:32px">
-      <div class="skill-block">
-        <h3>TA Operations</h3>
-        <ul class="skill-list">
-          <li>Full-cycle recruitment across IT &amp; Non-IT</li>
-          <li>GCC, BFSI, Product, Services, Shared Services</li>
-          <li>Engineering, Cloud, DevOps, GTM, Finance hiring</li>
-          <li>Team leadership (19-member team at Tangoe)</li>
-          <li>Multi-region: India, US, EMEA, APAC</li>
-          <li>Vendor management &amp; agency relationships</li>
+<!-- WHAT I DO -->
+<section id="what-i-do">
+  <div class="wrap">
+    <div class="sec-kicker">What I Do</div>
+    <h2 class="sec-title">The process. The team. The tools. <em>The data.</em></h2>
+    <p class="sec-sub">Four things that have to work together for hiring to work at scale. Here's what each looks like in practice.</p>
+
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pillar-icon">⚙️</div>
+        <h3 class="pillar-title">The Process</h3>
+        <p class="pillar-desc">Intake to offer — designed, documented, and governed.</p>
+        <ul class="pillar-items">
+          <li>TA operating models from zero</li>
+          <li>SLA governance &amp; compliance</li>
+          <li>Hiring playbooks &amp; intake frameworks</li>
+          <li>Campus hiring — NATS &amp; graduate programs</li>
+          <li>Lean Six Sigma process redesign</li>
+          <li>30% TTF reduction · 88%+ offer acceptance</li>
         </ul>
       </div>
-      <div class="skill-block">
-        <h3>Tools &amp; Technology</h3>
-        <ul class="skill-list">
-          <li>iCIMS, ADP, Phenom, Power BI</li>
-          <li>AI integration (Claude API, GPT)</li>
-          <li>Modern stack: Vercel, Upstash, Cloudinary</li>
-          <li>Data analytics &amp; reporting</li>
-          <li>JavaScript, HTML, SheetJS, Chart.js</li>
-          <li>Lean Six Sigma certified</li>
+      <div class="pillar">
+        <div class="pillar-icon">🌱</div>
+        <h3 class="pillar-title">The Team</h3>
+        <p class="pillar-desc">The people who run the function — built, coached, promoted.</p>
+        <ul class="pillar-items">
+          <li>19-member team built from scratch</li>
+          <li>Full appraisal, KPI &amp; PIP ownership</li>
+          <li>3 recruiters promoted to lead roles</li>
+          <li>Coaching cadences &amp; career pathing</li>
+          <li>Internal mobility frameworks</li>
+          <li>80%+ internal fill for senior roles</li>
+        </ul>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">📊</div>
+        <h3 class="pillar-title">The Tools &amp; Data</h3>
+        <p class="pillar-desc">AI, ATS, and analytics — built and used, not just talked about.</p>
+        <ul class="pillar-items">
+          <li>AI screening engine (built &amp; deployed)</li>
+          <li>Power BI dashboards at VP level</li>
+          <li>iCIMS · Phenom AI · ADP automation</li>
+          <li>40% screening efficiency gain</li>
+          <li>Boolean &amp; X-Ray sourcing methodology</li>
+          <li>Vendor cost reduction 20%+</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
+<hr class="divider">
+
+<!-- WHY DIFFERENT -->
+<section id="why-different">
+  <div class="wrap">
+    <div class="sec-kicker">Why Different</div>
+    <h2 class="sec-title">What you don't find often <em>enough.</em></h2>
+    <p class="sec-sub">Not a list of skills. The actual things that separate how I operate from how most TA leaders operate.</p>
+
+    <div class="diff-grid" style="margin-bottom:48px">
+      <div class="diff-card">
+        <div class="diff-num">01</div>
+        <div class="diff-title">Breadth that most specialists don't have</div>
+        <div class="diff-body">I've delivered across <strong>healthcare, BFSI, product engineering, GTM, finance, non-IT, US staffing, campus, and RPO</strong> — often simultaneously. 200+ hires solo in 8 months across 7 industries. GCCs hire across every function at once. I've already done it.</div>
+      </div>
+      <div class="diff-card">
+        <div class="diff-num">02</div>
+        <div class="diff-title">I build the tools, not just use them</div>
+        <div class="diff-body">I independently built a fully functional <strong>AI-powered screening engine</strong> and a real-time <strong>TA operations dashboard</strong> — not to showcase on a portfolio, but because I needed them to do the job better. Most TA leaders wait for IT to build them. I ship them myself.</div>
+      </div>
+      <div class="diff-card">
+        <div class="diff-num">03</div>
+        <div class="diff-title">Data goes to the boardroom, not a spreadsheet</div>
+        <div class="diff-body">I built <strong>Power BI dashboards that VP-level stakeholders use to make real decisions</strong> — demand forecasting, hiring velocity, quality-of-hire, attrition risk. Reduced requisition review cycles by 25%. Hiring data as a business input, not a monthly report nobody reads.</div>
+      </div>
+      <div class="diff-card">
+        <div class="diff-num">04</div>
+        <div class="diff-title">I leave teams better than I find them</div>
+        <div class="diff-body">Full people management accountability — appraisals, KPI-setting, PIPs, succession planning. Three senior recruiters promoted into lead roles. 19-member team built from zero. <strong>The team is the output, not just the hires.</strong> When I leave an organisation, the function doesn't collapse.</div>
+      </div>
+    </div>
+
+    <!-- INDUSTRIES PROOF -->
+    <div class="industries-wrap">
+      <div class="industries-title">Every industry. Every function.</div>
+      <div class="industries-sub">Not a claim — a track record across 15+ years and multiple organisations.</div>
+      <div class="industries-grid">
+        <span class="industry-tag highlight">Product Engineering</span>
+        <span class="industry-tag highlight">GCC / COE Hiring</span>
+        <span class="industry-tag highlight">GTM — Sales &amp; Pre-Sales</span>
+        <span class="industry-tag">Healthcare</span>
+        <span class="industry-tag">BFSI &amp; Insurance</span>
+        <span class="industry-tag">US Recruitment</span>
+        <span class="industry-tag">RPO Delivery</span>
+        <span class="industry-tag">Cloud &amp; DevOps</span>
+        <span class="industry-tag">Customer Success</span>
+        <span class="industry-tag">Data &amp; Analytics</span>
+        <span class="industry-tag">Finance &amp; Shared Services</span>
+        <span class="industry-tag">Non-IT &amp; Operations</span>
+        <span class="industry-tag">ERP &amp; Enterprise Tech</span>
+        <span class="industry-tag">Staffing &amp; Consulting</span>
+        <span class="industry-tag">Campus &amp; Early Careers</span>
+        <span class="industry-tag">HR &amp; People Functions</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- BUILT WORK -->
+<section id="built">
+  <div class="wrap">
+    <div class="sec-kicker">Built Work</div>
+    <h2 class="sec-title">Built Work.</h2>
+    <p class="sec-sub">Two tools in production. One live on this page. All built to solve real TA problems.</p>
+
+    <div class="built-grid">
+      <div class="built-card">
+        <div>
+          <div class="built-num">01</div>
+          <h3 class="built-title">AI-Powered Screening Engine</h3>
+          <div class="built-problem">Gap: First-round screening was consuming 40% of recruiter time with zero consistency across panels.</div>
+          <p class="built-desc">Built a fully functional AI-powered hiring platform from scratch — JD-matched video interviews, automated resume parsing, live proctoring, and a real-time recruiter scoring dashboard with analytics. Deployed serverless at zero infrastructure cost.</p>
+          <ul class="built-points">
+            <li>Adaptive proctoring with per-device calibration to reduce false positives</li>
+            <li>Anti-cheat: tab-switch and typing-pattern analysis scored 0–100</li>
+            <li>Configurable modes: technical, behavioural, process, ownership</li>
+            <li>Recruiter dashboard with TEREQ-level analytics and candidate scoring</li>
+          </ul>
+          <div class="built-footer">
+            <div class="built-stack">Claude API · Vercel · Upstash Redis · Cloudinary · Currently screening candidates for active hiring pipelines</div>
+            <a href="https://tangoe-screening.vercel.app" target="_blank" rel="noopener" class="built-link">View Live →</a>
+          </div>
+        </div>
+        <div><span class="status-badge s-live">Live</span></div>
+      </div>
+
+      <div class="built-card">
+        <div>
+          <div class="built-num">02</div>
+          <h3 class="built-title">TA Operations Dashboard</h3>
+          <div class="built-problem">Gap: No real-time pipeline visibility. Leadership made decisions from month-old reports. Recruiters worked in silos.</div>
+          <p class="built-desc">Built a recruiter-first TA platform replacing scattered spreadsheets — role-based views for Recruiters, Hiring Managers, Executives, and HR Leadership, all from the same live data. Hold-cycle tracking, audit trails, KPI dashboards.</p>
+          <ul class="built-points">
+            <li>Role-based access: Recruiter edit, HM and Executive tailored read views</li>
+            <li>Full audit trail — every stage transition logged with reason and timestamp</li>
+            <li>HR Leadership view: TTF trends, pipeline velocity, risk flags, org-level breakdown</li>
+          </ul>
+          <div class="built-footer">
+            <div class="built-stack">Vanilla JS · SheetJS · Chart.js</div>
+            <span style="color:var(--slate-light);font-size:13px;font-weight:600">Demo coming soon</span>
+          </div>
+        </div>
+        <div><span class="status-badge s-progress">In Progress</span></div>
+      </div>
+
+      <!-- LIVE BOOLEAN TOOL -->
+      <div class="built-card" style="grid-column:1/-1">
+        <div style="width:100%">
+          <div class="built-num">03 — Live Tool</div>
+          <h3 class="built-title">Boolean &amp; X-Ray Search Generator</h3>
+          <div class="built-problem">Gap: Recruiters spend hours building Boolean queries. Most are inconsistent, incomplete, and not platform-optimised.</div>
+          <p class="built-desc">Paste a job title and requirements — get LinkedIn Boolean, Naukri, and Google X-Ray strings in seconds.</p>
+
+          <div class="tool-wrap">
+            <div class="tool-bar">
+              <span>⚡</span>
+              <div class="tool-bar-title">Boolean &amp; X-Ray Generator</div>
+              <span class="tool-bar-badge">POWERED BY AI</span>
+            </div>
+            <div class="tool-body">
+              <div class="tool-row">
+                <div>
+                  <label class="f-label" for="jTitle">Job Title</label>
+                  <input class="f-input" type="text" id="jTitle" placeholder="e.g. Senior DevOps Engineer">
+                </div>
+                <div>
+                  <label class="f-label" for="jLoc">Location</label>
+                  <input class="f-input" type="text" id="jLoc" placeholder="e.g. Bangalore, India">
+                </div>
+              </div>
+              <label class="f-label" for="jSkills">Key Skills / Requirements (or paste JD)</label>
+              <textarea class="f-textarea" id="jSkills" placeholder="List must-have skills, experience level, or paste the full job description..."></textarea>
+              <div class="tool-actions">
+                <button class="gen-btn" id="genBtn" onclick="runGenerator()">⚡ Generate Search Strings</button>
+                <button onclick="tryExample()" style="background:none;border:1.5px solid var(--border);color:var(--slate);padding:10px 16px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;font-family:var(--sans);transition:all 0.15s" onmouseover="this.style.borderColor='var(--signal)';this.style.color='var(--signal)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--slate)'">Try an example →</button>
+                <span class="tool-hint">~10 seconds · Copy-ready results</span>
+              </div>
+              <div class="spin-wrap" id="spinner"><div class="spin"></div><span>Building optimised search strings...</span></div>
+              <div class="tool-out" id="toolOut"></div>
+            </div>
+          </div>
+        </div>
+        <div><span class="status-badge s-tool">Live Tool</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- CAREER -->
+<section id="career">
+  <div class="wrap">
+    <div class="sec-kicker">Career</div>
+    <h2 class="sec-title">What I built, <em>at each stop.</em></h2>
+    <p class="sec-sub">Every role, one thing stayed constant — I left the function better than I found it.</p>
+
+    <div class="career">
+      <div class="career-item">
+        <div class="career-period">AUG 2021 — PRESENT</div>
+        <div class="career-role">Talent Acquisition Lead — India &amp; APAC</div>
+        <div class="career-org">Global SaaS Company (GCC) · Bengaluru · Reports to VP HR</div>
+        <div class="career-stats">
+          <div class="career-stat"><span class="cs-val">19</span><span class="cs-lbl">Direct reports</span></div>
+          <div class="career-stat"><span class="cs-val">300–500</span><span class="cs-lbl">Hires / year</span></div>
+          <div class="career-stat"><span class="cs-val">↓30%</span><span class="cs-lbl">TTF reduction</span></div>
+          <div class="career-stat"><span class="cs-val">88%+</span><span class="cs-lbl">Offer acceptance</span></div>
+          <div class="career-stat"><span class="cs-val">80%+</span><span class="cs-lbl">Internal fill, senior roles</span></div>
+        </div>
+        <div class="career-desc">Own the India &amp; APAC TA operating model — <strong>full people management accountability</strong> for a 19-member team including appraisals, KPI-setting, PIPs, and succession planning. Built the function from zero: sourcing strategy, intake frameworks, offer management, campus hiring (NATS &amp; graduate), hiring manager playbooks, and DEI hiring practices. <strong>Still personally sources for critical and leadership mandates</strong> — maintains hands-on credibility while leading the team. Power BI dashboards at VP level, AI screening tools deployed, vendor dependency reduced 20%+. Promoted 3 senior recruiters into lead roles through deliberate career development.</div>
+      </div>
+
+      <div class="career-item">
+        <div class="career-period">MAR 2020 — JUL 2021</div>
+        <div class="career-role">Talent Acquisition Consultant</div>
+        <div class="career-org">Talent Revelations HR Services · Hyderabad</div>
+        <div class="career-stats">
+          <div class="career-stat"><span class="cs-val">Multi</span><span class="cs-lbl">Client portfolio</span></div>
+          <div class="career-stat"><span class="cs-val">IT/Finance/ITES</span><span class="cs-lbl">Sectors</span></div>
+        </div>
+        <div class="career-desc">Multi-client recruitment across IT, finance, and ITES — built reusable sourcing frameworks and SLA governance structures for client TA teams. <strong>Operated as a full TA function of one</strong>, managing multiple mandates simultaneously across geographies.</div>
+      </div>
+
+      <div class="career-item">
+        <div class="career-period">AUG 2018 — FEB 2020</div>
+        <div class="career-role">Manager — Talent Acquisition</div>
+        <div class="career-org">Siyaton Global Solutions · Bengaluru · RPO / BFSI / ERP</div>
+        <div class="career-stats">
+          <div class="career-stat"><span class="cs-val">200+</span><span class="cs-lbl">Solo hires, 8 months</span></div>
+          <div class="career-stat"><span class="cs-val">7</span><span class="cs-lbl">Industries simultaneously</span></div>
+          <div class="career-stat"><span class="cs-val">Lean Six Sigma</span><span class="cs-lbl">CBEMG certified</span></div>
+        </div>
+        <div class="career-desc">Led RPO delivery across BFSI, healthcare, insurance, ERP, staffing, product engineering, and non-IT — often running all simultaneously. <strong>200+ hires delivered solo in 8 months across 7 industries</strong> — personally handling sourcing, screening, competency assessment, and offer negotiation for every mandate. Applied Lean Six Sigma process redesign (CBEMG certified) to standardise intake and eliminate funnel inefficiency — the methodology behind every TTF improvement since.</div>
+      </div>
+
+      <div class="career-item">
+        <div class="career-period">JUN 2007 — JUN 2017 · 10 YEARS</div>
+        <div class="career-role">Assistant Manager — HR &amp; Talent Acquisition</div>
+        <div class="career-org">Nuance Communications · Bengaluru</div>
+        <div class="career-stats">
+          <div class="career-stat"><span class="cs-val">150+</span><span class="cs-lbl">Hires / month at peak</span></div>
+          <div class="career-stat"><span class="cs-val">10 yrs</span><span class="cs-lbl">Tenure</span></div>
+          <div class="career-stat"><span class="cs-val">US/UK</span><span class="cs-lbl">Markets</span></div>
+        </div>
+        <div class="career-desc">A decade scaling high-volume TA for US/UK client expansion — 150+ hires/month during peak phases. Built structured referral programs, employer branding initiatives, and competency-based screening frameworks; partnered with operations to align hiring to ramp schedules. <strong>The operational foundation behind everything that followed.</strong> Began career at the same organisation in HR operations and training (2003–2007) before transitioning fully into talent acquisition — giving 20+ years of people and process context behind every hire.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- RESUME & CERTIFICATIONS -->
+<section id="credentials">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start">
+
+      <!-- Resume Download -->
+      <div style="background:var(--ink);border-radius:16px;padding:36px;position:relative;overflow:hidden">
+        <div style="position:absolute;top:-40px;right:-40px;width:140px;height:140px;border-radius:50%;background:radial-gradient(circle,rgba(0,168,107,0.15) 0%,transparent 70%)"></div>
+        <div style="font-family:var(--mono);font-size:11px;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px">↓ Resume</div>
+        <div style="font-family:var(--serif);font-size:26px;font-weight:300;color:#fff;margin-bottom:8px;line-height:1.2">Grab my <em style="font-style:normal;font-weight:700;color:var(--signal)">résumé.</em></div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.5);margin-bottom:28px;line-height:1.5">A clean, recruiter-ready PDF with full experience, metrics, and competencies. Updated June 2026.</div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a href="Rufus_Solomon_Resume.pdf" download class="btn btn-primary" style="font-size:13px;padding:9px 18px">↓ Download PDF</a>
+          <a href="Rufus_Solomon_Resume.pdf" target="_blank" rel="noopener" class="btn" style="background:rgba(255,255,255,0.08);color:#fff;border-color:rgba(255,255,255,0.18);font-size:13px;padding:9px 18px">View in browser</a>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:36px">
+        <div style="font-family:var(--mono);font-size:11px;color:var(--signal);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px">Foundations</div>
+        <div style="font-family:var(--serif);font-size:22px;font-weight:300;color:var(--ink);margin-bottom:20px">Education &amp; certifications.</div>
+
+        <div style="margin-bottom:20px">
+          <div style="font-size:12px;font-weight:700;color:var(--slate-light);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:10px">Education</div>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <div style="background:var(--chalk);border-radius:8px;padding:10px 14px">
+              <div style="font-size:13px;font-weight:600;color:var(--ink)">Executive MBA</div>
+              <div style="font-size:12px;color:var(--slate-light)">IIBM Institute · Strategic HR, Workforce Planning · 2024</div>
+            </div>
+            <div style="background:var(--chalk);border-radius:8px;padding:10px 14px">
+              <div style="font-size:13px;font-weight:600;color:var(--ink)">Bachelor of Computer Applications</div>
+              <div style="font-size:12px;color:var(--slate-light)">Vinayaka Missions University · 2005</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div style="font-size:12px;font-weight:700;color:var(--slate-light);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:10px">Certifications</div>
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <div style="display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid var(--border)">
+              <span style="width:6px;height:6px;border-radius:50%;background:var(--signal);flex-shrink:0"></span>
+              <span style="font-size:13px;color:var(--slate)">Recruitment Funnel Optimisation — Lean Six Sigma <span style="color:var(--slate-light);font-size:11px">· CBEMG 2018</span></span>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid var(--border)">
+              <span style="width:6px;height:6px;border-radius:50%;background:var(--signal);flex-shrink:0"></span>
+              <span style="font-size:13px;color:var(--slate)">Certification in Project Management <span style="color:var(--slate-light);font-size:11px">· IIBM 2024</span></span>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid var(--border)">
+              <span style="width:6px;height:6px;border-radius:50%;background:var(--signal);flex-shrink:0"></span>
+              <span style="font-size:13px;color:var(--slate)">AI &amp; Automation in Talent Acquisition <span style="color:var(--slate-light);font-size:11px">· Applied</span></span>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;padding:7px 0">
+              <span style="width:6px;height:6px;border-radius:50%;background:var(--signal);flex-shrink:0"></span>
+              <span style="font-size:13px;color:var(--slate)">Languages: English · Kannada · Telugu · Hindi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-kicker">Work With Me</div>
+    <h2 class="sec-title">Advisory &amp; Consulting.</h2>
+    <p class="sec-sub">15 years of building TA infrastructure — available to organisations and individuals who want to do it right.</p>
+
+    <div class="svc-grid">
+      <div class="svc-card">
+        <div class="svc-icon">🏗️</div>
+        <h3 class="svc-title">TA Strategy &amp; Setup</h3>
+        <p class="svc-desc">For GCCs and product companies building India hiring from scratch — or fixing what isn't working. Operating model design, team structure, ATS setup, SLA frameworks, and sourcing strategy.</p>
+        <div class="svc-who">For: GCC founders · HR leaders · TA heads</div>
+        <a href="mailto:rufus@solomonhires.com" class="svc-cta">Get in touch →</a>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">🤖</div>
+        <h3 class="svc-title">AI in TA Advisory</h3>
+        <p class="svc-desc">Implementing AI and automation in your TA function — screening tools, sourcing workflows, data dashboards. I've built and deployed this in production. I can help your team do the same.</p>
+        <div class="svc-who">For: TA leaders · HR tech teams · Startups</div>
+        <a href="mailto:rufus@solomonhires.com" class="svc-cta">Get in touch →</a>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">🎯</div>
+        <h3 class="svc-title">TA Leader Coaching</h3>
+        <p class="svc-desc">Resume reviews, LinkedIn positioning, and interview prep — specifically for TA professionals targeting senior roles. Feedback from someone who has been on the hiring side for 15 years.</p>
+        <div class="svc-who">For: Senior TA professionals · Aspiring TA leaders</div>
+        <a href="mailto:rufus@solomonhires.com" class="svc-cta">Get in touch →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- CONTACT -->
 <section id="contact">
-  <div class="container">
-    <div class="contact-card">
-      <h2>Let's talk hiring.</h2>
-      <p>Open to Sr. Manager, Associate Director, or Director TA roles. Available for conversations about TA strategy, AI in hiring, or recruiter team operations.</p>
+  <div class="wrap">
+    <div class="contact-wrap">
+      <h2 class="contact-title">Hiring is a business function.<br>Let's run it like one.</h2>
+      <p class="contact-sub">Open to senior Talent Acquisition, People Leadership, and HR Director roles — and consulting engagements for GCCs and product companies building or fixing their talent function. I read every message personally.</p>
       <div class="contact-btns">
         <a href="mailto:rufus@solomonhires.com" class="btn btn-primary">rufus@solomonhires.com</a>
-        <a href="https://wa.me/919900038972" target="_blank" rel="noopener" class="btn btn-secondary">WhatsApp →</a>
-        <a href="https://linkedin.com/in/rufus-solomon-ta" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn →</a>
+        <a href="https://wa.me/919900038972" target="_blank" rel="noopener" class="btn btn-ghost">WhatsApp →</a>
+        <a href="https://linkedin.com/in/rufus-solomon-ta" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn →</a>
       </div>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="container footer-inner">
-    <div class="footer-copy">© 2026 Rufus Solomon · Bangalore, India</div>
+  <div class="wrap footer-inner">
+    <div class="footer-copy">© 2026 Rufus Solomon · Bengaluru, India</div>
     <div class="footer-links">
       <a href="mailto:rufus@solomonhires.com">Email</a>
-      <a href="https://wa.me/919900038972" target="_blank" rel="noopener">WhatsApp</a>
-      <a href="https://linkedin.com/in/rufus-solomon-ta" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://tangoe-screening.vercel.app" target="_blank" rel="noopener">Hiring Engine</a>
+      <a href="https://wa.me/919900038972" target="_blank">WhatsApp</a>
+      <a href="https://linkedin.com/in/rufus-solomon-ta" target="_blank">LinkedIn</a>
+      <a href="https://tangoe-screening.vercel.app" target="_blank">Hiring Engine</a>
     </div>
   </div>
 </footer>
 
+<script>
+async function runGenerator() {
+  var title = document.getElementById('jTitle').value.trim();
+  var loc = document.getElementById('jLoc').value.trim();
+  var skills = document.getElementById('jSkills').value.trim();
+  if (!title && !skills) { alert('Please enter a job title or requirements first.'); return; }
+  var btn = document.getElementById('genBtn');
+  var spin = document.getElementById('spinner');
+  var out = document.getElementById('toolOut');
+  btn.disabled = true;
+  spin.classList.add('on');
+  out.classList.remove('on');
+  out.innerHTML = '';
+
+  var prompt = 'You are a senior talent acquisition sourcer with 15+ years of experience. Generate highly specific, production-ready Boolean and X-Ray search strings.\n\nROLE DETAILS:\nJob Title: ' + (title||'Not specified') + '\nLocation: ' + (loc||'Not specified') + '\nSkills/Requirements: ' + (skills||'Not specified') + '\n\nRULES:\n1. LINKEDIN BOOLEAN: Use AND, OR, NOT in CAPS. Quote exact phrases. Include 3-5 title variants in parentheses with OR. Add seniority variants (Senior, Lead, Principal). Example: ("product manager" OR "senior PM" OR "product lead") AND ("SaaS" OR "B2B") AND ("roadmap" OR "agile") NOT (intern OR fresher)\n2. NAUKRI BOOLEAN: Basic Boolean AND/OR/NOT with quotes. Include Indian city variants (Bangalore OR Bengaluru). Simpler than LinkedIn. Add experience level naturally.\n3. GOOGLE X-RAY LINKEDIN: Must start with site:linkedin.com/in. Add title variants and key skills in quotes. Add location in quotes.\n4. GOOGLE X-RAY RESUMES: Start with (filetype:pdf OR filetype:doc OR filetype:docx). Add -site:linkedin.com -site:naukri.com. Include role title and top skills.\n5. TIPS: 2-3 specific sourcing tips for this exact role type, separated by | character.\n\nRespond ONLY with this JSON, no markdown, no explanation:\n{"linkedin":"...","naukri":"...","xray_linkedin":"...","xray_resume":"...","tips":"tip1 | tip2 | tip3"}';
+
+  try {
+    var res = await fetch('/api/boolean', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ model: 'claude-sonnet-4-6', max_tokens: 1500, messages: [{ role: 'user', content: prompt }] })
+    });
+    var data = await res.json();
+    var text = (data.content && data.content[0] && data.content[0].text || '').trim().replace(/```json|```/g,'').trim();
+    var parsed = JSON.parse(text);
+
+    var platforms = [
+      { key: 'linkedin', label: 'LinkedIn Boolean', hint: 'Paste into LinkedIn Recruiter or Sales Navigator search bar' },
+      { key: 'naukri', label: 'Naukri Boolean', hint: 'Paste into Naukri keyword search field' },
+      { key: 'xray_linkedin', label: 'Google X-Ray', hint: 'Paste directly into Google to find LinkedIn profiles and public resumes' }
+    ];
+
+    var html = '<div style="font-size:13px;color:var(--slate);margin-bottom:20px">Results for <strong style="color:var(--ink)">' + esc(title||'your role') + '</strong>' + (loc ? ' · <strong style="color:var(--ink)">' + esc(loc) + '</strong>' : '') + '</div>';
+
+    platforms.forEach(function(p) {
+      if (parsed[p.key]) {
+        var id = 'q_' + p.key;
+        html += '<div class="out-block">';
+        html += '<div class="out-label">' + p.label + '<button class="copy-btn" onclick="doCopy(\'' + id + '\',this)">Copy</button></div>';
+        html += '<div style="font-size:11px;color:var(--slate-light);margin-bottom:6px">' + esc(p.hint) + '</div>';
+        html += '<div class="out-query" id="' + id + '">' + esc(parsed[p.key]) + '</div>';
+        html += '</div>';
+      }
+    });
+
+    if (parsed.tips) {
+      var tips = parsed.tips.split('|').map(function(t){ return t.trim(); }).filter(Boolean);
+      if (tips.length) {
+        html += '<div style="margin-top:20px;background:var(--signal-light);border:1px solid rgba(0,168,107,0.15);border-radius:8px;padding:16px 20px">';
+        html += '<div style="font-size:11px;font-weight:700;color:var(--signal);text-transform:uppercase;letter-spacing:0.07em;margin-bottom:10px">Sourcing Tips for this role</div>';
+        tips.forEach(function(t){
+          html += '<div style="font-size:13px;color:var(--slate);padding:4px 0">→ ' + esc(t) + '</div>';
+        });
+        html += '</div>';
+      }
+    }
+
+    out.innerHTML = html;
+    out.classList.add('on');
+  } catch(e) {
+    out.innerHTML = '<div style="color:#c0392b;font-size:13px;padding:12px 16px;background:#fff5f5;border-radius:8px;border:1px solid #fecaca">Something went wrong generating the strings. Please try again.</div>';
+    out.classList.add('on');
+  } finally {
+    btn.disabled = false;
+    spin.classList.remove('on');
+  }
+}
+
+
+var _exampleIdx = 0;
+var _examples = [
+  { title: 'Senior DevOps Engineer', loc: 'Bangalore, India', skills: '5+ years DevOps, Kubernetes, Docker, AWS or Azure, CI/CD pipelines (Jenkins/GitLab), Terraform, Linux. GCC/product company experience preferred.' },
+  { title: 'Business Analyst — BFSI', loc: 'Hyderabad, India', skills: '4-7 years BA in banking or insurance, requirement gathering, process mapping, Agile/Scrum, stakeholder management, SQL basics, JIRA.' },
+  { title: 'Customer Success Manager', loc: 'Bangalore, India', skills: '3-6 years CSM in SaaS, churn management, NPS improvement, QBR delivery, upsell/cross-sell, CRM tools (Salesforce/Gainsight), US or EMEA client-facing experience.' }
+];
+function tryExample() {
+  var ex = _examples[_exampleIdx % _examples.length];
+  _exampleIdx++;
+  document.getElementById('jTitle').value = ex.title;
+  document.getElementById('jLoc').value = ex.loc;
+  document.getElementById('jSkills').value = ex.skills;
+  document.getElementById('jTitle').dispatchEvent(new Event('input'));
+  // Auto-run after a brief moment so user sees the fields fill
+  setTimeout(function(){ runGenerator(); }, 300);
+}
+
+function doCopy(id, btn) {
+  var el = document.getElementById(id);
+  if (!el) return;
+  navigator.clipboard.writeText(el.textContent).then(function() {
+    btn.textContent = 'Copied!';
+    setTimeout(function(){ btn.textContent = 'Copy'; }, 2000);
+  });
+}
+
+function esc(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+</script>
 </body>
 </html>
